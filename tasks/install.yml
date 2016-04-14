@@ -1,0 +1,10 @@
+---
+#
+- name: unarchive file
+  unarchive:
+    src: "http://www-us.apache.org/dist/zookeeper/zookeeper-{{ zookeeper_version }}/zookeeper-{{ zookeeper_version }}.tar.gz"
+    dest: "{{ zookeeper_base }}"
+    copy: no
+    creates: "{{ zookeeper_home }}/bin/zookeper-server-start.sh"
+    owner: "{{ zookeeper_user }}"
+    group: "{{ zookeeper_group }}"

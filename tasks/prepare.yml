@@ -1,0 +1,19 @@
+---
+#
+- name: prepare zookeeper group
+  group:
+    name: "{{ zookeeper_group }}"
+    state: present
+
+- name: prepare zookeeper user
+  user:
+    name: "{{ zookeeper_user }}"
+    group: "{{ zookeeper_group }}"
+    state: present
+
+- name: prepare zookeeper directory
+  file:
+    path: "{{ zookeeper_base }}"
+    state: directory
+    owner: "{{ zookeeper_user }}"
+    group: "{{ zookeeper_group }}"

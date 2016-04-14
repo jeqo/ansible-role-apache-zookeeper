@@ -1,0 +1,6 @@
+---
+# vars file for apache-kafka
+zookeeper_base: "/opt/apache/zookeeper"
+zookeeper_home: "{{ zookeeper_base }}/zookeeper-{{ zookeeper_version }}"
+zookeeper_user: zookeeper
+zookeeper_group: zookeeper
