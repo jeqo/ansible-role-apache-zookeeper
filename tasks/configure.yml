@@ -1,0 +1,5 @@
+---
+#
+- template:
+    src: zookeeper.properties.j2
+    dest: "{{ zookeeper_home }}/conf/zoo.cfg"

@@ -1,7 +1,7 @@
 ---
 # defaults file for apache-zookeeper
 # http://www-us.apache.org/dist/zookeeper/zookeeper-3.4.8/zookeeper-3.4.8.tar.gz
-zookeeper_version: 3.4.8
+zookeeper_version: 3.3.6
 
 zookeeper_data_dir: /tmp/zookeeper
 zookeeper_client_port: 2181
