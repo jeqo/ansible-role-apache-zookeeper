@@ -3,7 +3,6 @@
 
   roles:
     - role: apache-zookeeper
-      zookeeper_version: 3.4.8
 
 - hosts: test02
 
